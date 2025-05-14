@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fin del Proyecto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: white;
+      transition: background-color 3s ease-in;
+    }
+
+    h1 {
+      color: darkred;
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: orangered;
+      color: lightblue;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .burning {
+      animation: burn 4s forwards;
+    }
+
+    @keyframes burn {
+      0% { opacity: 1; background-color: white; }
+      25% { background-color: orange; }
+      50% { background-color: darkorange; }
+      75% { background-color: brown; opacity: 0.5; }
+      100% { background-color: black; opacity: 0; }
+    }
+  </style>
+</head>
+<body id="body">
+  <h1>¡Gracias por aprender sobre diferentes emergencias que pueden pasar en el dia a dia!</h1>
+  <p>Esperamos que esta información te ayude a estar preparado.</p>
+  <button onclick="quemar()">Volver al Inicio</button>
+
+  <script>
+    function quemar() {
+      const body = document.getElementById('body');
+      body.classList.add('burning');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
