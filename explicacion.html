@@ -13,8 +13,35 @@
       background-position: center;  
       background-attachment: fixed;  
       backdrop-filter: brightness(0.4);  
+      margin: 0; /* Elimina el margen predeterminado */
     }  
 
+    /* Estilo para el menú de navegación sin franja */
+    .menu-navegacion {  
+      position: fixed;  
+      top: 0;  
+      left: 0;  
+      right: 0;  
+      z-index: 1000; /* Asegura que esté en la parte superior */
+      display: flex;  
+      justify-content: center;  
+      gap: 40px;  
+      padding: 10px 0;  
+    }  
+
+    .menu-navegacion a {  
+      color: #ffcc00;  
+      text-decoration: none;  
+      font-weight: bold;  
+      font-size: 16px;  
+      transition: color 0.3s ease;  
+    }  
+
+    .menu-navegacion a:hover {  
+      color: #ffffff;  
+    }  
+
+    /* Estilo del banner */
     .banner {  
       position: absolute;  
       top: 10px;  
@@ -89,6 +116,15 @@
   </style>  
 </head>  
 <body>  
+
+  <!-- Menú de navegación sin franja de fondo -->
+  <nav class="menu-navegacion">  
+    <a href="incendios.html">Incendios</a>  
+    <a href="terremotos.html">Terremotos</a>  
+    <a href="incendios forestales.html">Incendios Forestales</a>  
+    <a href="herramientas.html">Herramientas</a>  
+  </nav>  
+
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVC89P2-G3NZEumAO8QOzWTdrM_XHon15Qw&s" alt="Banner" class="banner" />  
   
   <div class="contenido">  
