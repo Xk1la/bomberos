@@ -5,13 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emergencias - Inicio</title>
   <style>
-    body { font-family: Arial; text-align: center; padding: 20px; }
-    .hidden { display: none; }
-    input { margin: 5px; padding: 8px; }
-    button { padding: 10px 15px; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #003366;
+    }
+
+    h1 {
+      color: #b30000;
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    input {
+      margin: 5px;
+      padding: 10px;
+      border: 2px solid #003366;
+      border-radius: 5px;
+      width: 250px;
+      color: #003366;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #b30000;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #800000;
+    }
+
+    #mensaje {
+      color: red;
+      margin-top: 10px;
+    }
+
+    .logo {
+      height: 80px;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVC89P2-G3NZEumAO8QOzWTdrM_XHon15Qw&s" alt="Logo CBSA" class="logo">
+
   <h1>¿Qué hacer en casos de emergencia?</h1>
   <p>En esta página aprenderás cómo actuar frente a situaciones de riesgo.</p>
   <p>Para continuar, debes iniciar sesión o crear un usuario.</p>
@@ -24,7 +72,7 @@
     <button onclick="iniciarSesion()">Iniciar Sesión</button>
   </div>
 
-  <p id="mensaje" style="color:red;"></p>
+  <p id="mensaje"></p>
 
   <script>
     function registrar() {
