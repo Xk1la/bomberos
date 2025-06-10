@@ -4,75 +4,111 @@
   <meta charset="UTF-8">
   <title>Terremotos</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f2f2f2; }
-    h1 { color: #b30000; }
-    h2 { color: #800000; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://cbsa.cl/wp-content/uploads/2023/02/unidad_b_3-1-1024x683.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 30px;
+      color: white;
+    }
+    .banner {
+      background-color: rgba(139, 0, 0, 0.9);
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .banner img {
+      height: 80px;
+    }
+    h1 { color: #ffdddd; }
+    h2 { color: #ff9999; }
+    h3 { color: #ffbbbb; }
     ul, ol { margin-left: 20px; }
     blockquote {
-      background-color: #f9f9f9;
-      border-left: 10px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 10px solid #ff5555;
       margin: 20px;
       padding: 10px 20px;
       font-style: italic;
+      color: #f8f8f8;
     }
     footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #555;
+      color: #ccc;
+    }
+    a {
+      color: #ffc;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>¿Qué hacer en caso de terremoto?</h1>
-  <ul>
-    <li>Mantén la calma y no corras.</li>
-    <li>Ubícate bajo un mueble firme o junto a una estructura resistente (triángulo de la vida).</li>
-    <li>Aléjate de ventanas, vidrios y objetos que puedan caer.</li>
-    <li>Si estás en la calle, aléjate de postes, cables, árboles y edificios.</li>
-    <li>Después del sismo, evacúa con precaución y revisa si hay fugas de gas, agua o cables expuestos.</li>
-    <li>Sintoniza la radio o canales oficiales para instrucciones.</li>
-  </ul>
+  <div class="banner">
+    <div><strong>Terremotos</strong></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVC89P2-G3NZEumAO8QOzWTdrM_XHon15Qw&s" alt="Escudo Compañía">
+  </div>
 
-  <h2>Fases de un terremoto</h2>
-  <ol>
-    <li><strong>Preparación:</strong> Acumulación de energía en las placas tectónicas.</li>
-    <li><strong>Ruptura:</strong> Liberación súbita de energía que provoca el sismo.</li>
-    <li><strong>Ondas sísmicas:</strong> Propagación de la energía a través de la tierra.</li>
-    <li><strong>Réplicas:</strong> Movimientos secundarios que siguen al sismo principal.</li>
-  </ol>
+  <div class="overlay">
+    <h1>¿Qué hacer en caso de terremoto?</h1>
+    <ul>
+      <li>Mantén la calma y no corras.</li>
+      <li>Ubícate bajo un mueble firme o junto a una estructura resistente (triángulo de la vida).</li>
+      <li>Aléjate de ventanas, vidrios y objetos que puedan caer.</li>
+      <li>Si estás en la calle, aléjate de postes, cables, árboles y edificios.</li>
+      <li>Después del sismo, evacúa con precaución y revisa si hay fugas de gas, agua o cables expuestos.</li>
+      <li>Sintoniza la radio o canales oficiales para instrucciones.</li>
+    </ul>
 
-  <h2>¿Qué hacen los bomberos en un terremoto?</h2>
-  <ul>
-    <li>Acuden a rescates de personas atrapadas entre escombros.</li>
-    <li>Apagan incendios provocados por rupturas de gas o instalaciones eléctricas.</li>
-    <li>Colaboran con la evacuación de personas desde zonas inseguras.</li>
-    <li>Brindan primeros auxilios y asistencia a los heridos.</li>
-    <li>Trabajan con otros equipos de emergencia y protección civil.</li>
-  </ul>
+    <h2>Fases de un terremoto</h2>
+    <ol>
+      <li><strong>Preparación:</strong> Acumulación de energía en las placas tectónicas.</li>
+      <li><strong>Ruptura:</strong> Liberación súbita de energía que provoca el sismo.</li>
+      <li><strong>Ondas sísmicas:</strong> Propagación de la energía a través de la tierra.</li>
+      <li><strong>Réplicas:</strong> Movimientos secundarios que siguen al sismo principal.</li>
+    </ol>
 
-  <h2>Relatos reales de sobrevivientes</h2>
-  <p>Los terremotos en Chile han dejado historias conmovedoras de personas que enfrentaron situaciones extremas. A continuación, algunos testimonios:</p>
+    <h2>¿Qué hacen los bomberos en un terremoto?</h2>
+    <ul>
+      <li>Acuden a rescates de personas atrapadas entre escombros.</li>
+      <li>Apagan incendios provocados por rupturas de gas o instalaciones eléctricas.</li>
+      <li>Colaboran con la evacuación de personas desde zonas inseguras.</li>
+      <li>Brindan primeros auxilios y asistencia a los heridos.</li>
+      <li>Trabajan con otros equipos de emergencia y protección civil.</li>
+    </ul>
 
-  <h3>Macarena Santiago chile 2010</h3>
-  <blockquote>
-    “Cuando se empezaron a caer las cosas salí corriendo a juntarme con mi familia, pero costaba mantenerse en pie. Las réplicas siguieron durante toda la noche y aún siguen habiendo réplicas. Fue muy aterrador, primera vez en mi vida que me toca vivir esta experiencia.”<br>
-    <cite>– Macarena, Santiago, Chile.</cite>
-  </blockquote>
+    <h2>Relatos reales de sobrevivientes</h2>
+    <p>Los terremotos en Chile han dejado historias conmovedoras de personas que enfrentaron situaciones extremas. A continuación, algunos testimonios:</p>
 
-  <h3>Sobreviviente Dichato chile 2010</h3>
-  <blockquote>
-    “El mar se retiró y luego volvió con fuerza, arrasando todo a su paso. Perdimos nuestras casas, pero no la esperanza.”<br>
-    <cite>– Habitante de Dichato, Región del Biobío.</cite>
-  </blockquote>
+    <h3>Macarena – Santiago, Chile 2010</h3>
+    <blockquote>
+      “Cuando se empezaron a caer las cosas salí corriendo a juntarme con mi familia, pero costaba mantenerse en pie. Las réplicas siguieron durante toda la noche y aún siguen habiendo réplicas. Fue muy aterrador, primera vez en mi vida que me toca vivir esta experiencia.”<br>
+      <cite>– Macarena, Santiago, Chile.</cite>
+    </blockquote>
 
-  <h3>Marta Medel  Valdivia chile 1960</h3>
-  <blockquote>
-    “Y cuando llegué a la casa estaba la escoba, la casa se enchuecó y estaban todos llorando.”<br>
-    <cite>– Marta Medel, sobreviviente del terremoto de Valdivia.</cite>
-  </blockquote>
+    <h3>Sobreviviente – Dichato, Chile 2010</h3>
+    <blockquote>
+      “El mar se retiró y luego volvió con fuerza, arrasando todo a su paso. Perdimos nuestras casas, pero no la esperanza.”<br>
+      <cite>– Habitante de Dichato, Región del Biobío.</cite>
+    </blockquote>
 
-  <footer>
-    <p><a href="forestal.html">Siguiente &gt;&gt;</a> | <a href="index.html">Cerrar sesión</a></p>
-  </footer>
+    <h3>Marta Medel – Valdivia, Chile 1960</h3>
+    <blockquote>
+      “Y cuando llegué a la casa estaba la escoba, la casa se enchuecó y estaban todos llorando.”<br>
+      <cite>– Marta Medel, sobreviviente del terremoto de Valdivia.</cite>
+    </blockquote>
+
+    <footer>
+      <p><a href="forestal.html">Siguiente &gt;&gt;</a> | <a href="index.html">Cerrar sesión</a></p>
+    </footer>
+  </div>
 </body>
 </html>
