@@ -4,65 +4,119 @@
   <meta charset="UTF-8">
   <title>Incendios Forestales de Interfaz</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #fffaf3; }
-    h1 { color: #b33c00; }
-    h2 { color: #804000; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://cbsa.cl/wp-content/uploads/2023/02/unidad_b_3-1-1024x683.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 30px;
+      color: white;
+    }
+    .banner {
+      background-color: rgba(139, 0, 0, 0.9);
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .banner img {
+      height: 80px;
+    }
+    h1 { color: #ffdddd; }
+    h2 { color: #ff9999; }
+    h3 { color: #ffbbbb; }
     ul, ol { margin-left: 20px; }
     blockquote {
-      background-color: #f9f9f9;
-      border-left: 10px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 10px solid #ff8800;
       margin: 20px;
       padding: 10px 20px;
       font-style: italic;
+      color: #f8f8f8;
     }
     footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #555;
+      color: #ccc;
+    }
+    a {
+      color: #ffc;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>¿Qué hacer en caso de incendio forestal en zonas de interfaz?</h1>
-  <ul>
-    <li>Mantente informado por canales oficiales como SENAPRED y CONAF.</li>
-    <li>Prepara una mochila de emergencia con agua, documentos y medicamentos.</li>
-    <li>No enciendas fuego ni uses herramientas que generen chispas en zonas secas.</li>
-    <li>Evacúa inmediatamente si la autoridad lo indica, siguiendo rutas seguras.</li>
-    <li>Ayuda a niños, personas mayores y personas con discapacidad a evacuar.</li>
-    <li>Llama a emergencias: <strong>130 (CONAF) o 132 (Bomberos)</strong>.</li>
-  </ul>
+  <div class="banner">
+    <div><strong>Incendios Forestales de Interfaz</strong></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVC89P2-G3NZEumAO8QOzWTdrM_XHon15Qw&s" alt="Logo CBSA">
+  </div>
 
-  <h2>Prevención</h2>
-  <ul>
-    <li>Despeja el terreno alrededor de tu casa de maleza seca.</li>
-    <li>Mantén techos y canaletas limpias de hojas.</li>
-    <li>No almacenes materiales inflamables cerca de la vivienda.</li>
-    <li>Participa en simulacros y planes comunitarios de evacuación.</li>
-  </ul>
+  <div class="overlay">
+    <h1>¿Qué hacer en caso de incendio forestal en zonas de interfaz?</h1>
+    <ul>
+      <li>Mantente informado por canales oficiales como SENAPRED y CONAF.</li>
+      <li>Prepara una mochila de emergencia con agua, documentos y medicamentos.</li>
+      <li>No enciendas fuego ni uses herramientas que generen chispas en zonas secas.</li>
+      <li>Evacúa inmediatamente si la autoridad lo indica, siguiendo rutas seguras.</li>
+      <li>Ayuda a niños, personas mayores y personas con discapacidad a evacuar.</li>
+      <li>Llama a emergencias: <strong>130 (CONAF) o 132 (Bomberos)</strong>.</li>
+    </ul>
 
-  <h2>Relatos reales de incendios forestales en interfaz</h2>
+    <h2>Prevención</h2>
+    <ul>
+      <li>Despeja el terreno alrededor de tu casa de maleza seca.</li>
+      <li>Mantén techos y canaletas limpias de hojas.</li>
+      <li>No almacenes materiales inflamables cerca de la vivienda.</li>
+      <li>Participa en simulacros y planes comunitarios de evacuación.</li>
+    </ul>
 
-  <h3>Testigo en Santa Juana Biobío chile 2023</h3>
-  <blockquote>
-    “Nos encerramos en el horno de barro porque no había dónde más ir. Las llamas estaban por todos lados, fue lo único que nos salvó.”<br>
-    <cite> Pedro Aroca, sobreviviente del incendio en Santa Juana.</cite>
-  </blockquote>
+    <h2>Relatos reales de incendios forestales en interfaz</h2>
 
-  <h3>Sobreviviente de Villa Independencia  Viña del Mar chile 2023</h3>
-  <blockquote>
-    “Cuando me di cuenta ya estaba todo ardiendo. El fuego entró por los cerros y arrasó con nuestra casa en minutos.”<br>
-    <cite>– Vecina afectada en Viña del Mar.</cite>
-  </blockquote>
+    <h3>Testigo en Santa Juana, Biobío – 2023</h3>
+    <blockquote>
+      “Nos encerramos en el horno de barro porque no había dónde más ir. Las llamas estaban por todos lados, fue lo único que nos salvó.”<br>
+      <cite>– Pedro Aroca, sobreviviente del incendio en Santa Juana.</cite>
+    </blockquote>
 
-  <h3>Voluntario en la región del Maule</h3>
-  <blockquote>
-    “Tuvimos que combatir el fuego a pala y ramas. No llegaba el agua. Fue una lucha desesperada por salvar algo.”<br>
-    <cite>– Voluntario anónimo, incendios 2023.</cite>
-  </blockquote>
+    <h3>Sobreviviente en Villa Independencia, Viña del Mar – 2023</h3>
+    <blockquote>
+      “Cuando me di cuenta ya estaba todo ardiendo. El fuego entró por los cerros y arrasó con nuestra casa en minutos.”<br>
+      <cite>– Vecina afectada en Viña del Mar.</cite>
+    </blockquote>
 
-  <footer>
-    <p><a href="herramientas.html">Siguiente &gt;&gt;</a> | <a href="bomberos.html">Cerrar sesión</a></p>
-  </footer>
+    <h3>Voluntario en la Región del Maule – 2023</h3>
+    <blockquote>
+      “Tuvimos que combatir el fuego a pala y ramas. No llegaba el agua. Fue una lucha desesperada por salvar algo.”<br>
+      <cite>– Voluntario anónimo, incendios 2023.</cite>
+    </blockquote>
+
+    <h3>Vecino en Quilpué, Región de Valparaíso – 2021</h3>
+    <blockquote>
+      “Salimos corriendo con lo puesto. En diez minutos el cerro entero estaba en llamas. Se sintió como el fin del mundo.”<br>
+      <cite>– Gonzalo, habitante de Quilpué.</cite>
+    </blockquote>
+
+    <h3>Bombero en Tomé, Región del Biobío – 2023</h3>
+    <blockquote>
+      “El calor era insoportable, y teníamos casas rodeadas por el fuego. La prioridad era salvar vidas. A veces no se puede con todo.”<br>
+      <cite>– Voluntario de la Quinta Compañía de Tomé.</cite>
+    </blockquote>
+
+    <h3>Madre afectada en Penco – 2024</h3>
+    <blockquote>
+      “Mi hijo no quería evacuar porque buscaba a nuestra perrita. La encontramos de milagro entre los matorrales chamuscados.”<br>
+      <cite>– Carolina, Penco.</cite>
+    </blockquote>
+
+    <footer>
+      <p><a href="herramientas.html">Siguiente &gt;&gt;</a> | <a href="bomberos.html">Cerrar sesión</a></p>
+    </footer>
+  </div>
 </body>
 </html>
