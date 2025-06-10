@@ -82,6 +82,7 @@
         localStorage.setItem('usuario', usuario);
         localStorage.setItem('contraseña', contraseña);
         alert('Usuario registrado. Ahora puedes iniciar sesión.');
+        document.getElementById('mensaje').innerText = '';
       } else {
         document.getElementById('mensaje').innerText = 'Completa todos los campos.';
       }
@@ -93,7 +94,7 @@
       const usuarioGuardado = localStorage.getItem('usuario');
       const contraseñaGuardada = localStorage.getItem('contraseña');
       if (usuario === usuarioGuardado && contraseña === contraseñaGuardada) {
-        window.location.href = "incendios.html";
+        window.location.href = "explicacion.html";
       } else {
         document.getElementById('mensaje').innerText = 'Usuario o contraseña incorrectos.';
       }
