@@ -153,6 +153,13 @@
     .comentarios button:hover {
       background-color: #e6b800;
     }
+
+    .mensaje-exito {
+      color: #00ff00;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+    }
   </style>  
 </head>  
 <body>  
@@ -257,12 +264,27 @@
     <!-- Caja de comentarios -->
     <div class="comentarios">
       <h3>📝 Deja tu comentario</h3>
-      <textarea placeholder="Escribe tu comentario aquí..."></textarea>
+      <textarea id="comentario" placeholder="Escribe tu comentario aquí..."></textarea>
       <br>
-      <button>Enviar</button>
+      <button id="boton-enviar">Enviar</button>
+      <p id="mensaje-exito" class="mensaje-exito">✅ ¡Mensaje enviado con éxito!</p>
     </div>
 
   </div>  
+
+  <script>
+    document.getElementById("boton-enviar").addEventListener("click", function () {
+      const textarea = document.getElementById("comentario");
+      const mensaje = document.getElementById("mensaje-exito");
+
+      textarea.value = ""; // Borra el comentario
+      mensaje.style.display = "block"; // Muestra el mensaje
+
+      setTimeout(() => {
+        mensaje.style.display = "none"; // Oculta después de 3 segundos
+      }, 3000);
+    });
+  </script>
 </body>  
 </html>
 
