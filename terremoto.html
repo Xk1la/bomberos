@@ -10,6 +10,25 @@
       background: url('https://cbsa.cl/wp-content/uploads/2023/02/unidad_b_3-1-1024x683.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+
+    /* Barra de navegación */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    .navbar a {
+      color: yellow;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 20px;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: orange;
+    }
+
     .overlay {
       background-color: rgba(0, 0, 0, 0.7);
       min-height: 100vh;
@@ -40,6 +59,16 @@
   </style>
 </head>
 <body>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <a href="inicio.html">Inicio</a>
+    <a href="incendios.html">Incendios</a>
+    <a href="terremotos.html">Terremotos</a>
+    <a href="forestales.html">Incendios Forestales</a>
+    <a href="herramientas.html">Herramientas</a>
+  </nav>
+
   <div class="overlay">
     <h1>¿Qué hacer en caso de terremoto?</h1>
     <ul>
@@ -95,4 +124,3 @@
   </div>
 </body>
 </html>
-
