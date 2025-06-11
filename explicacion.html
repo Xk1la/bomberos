@@ -13,29 +13,25 @@
       background-position: center;  
       background-attachment: fixed;  
       backdrop-filter: brightness(0.4);  
+      margin: 0; /* quitar margen para que la barra quede bien */
+      padding-top: 70px; /* para que el contenido no quede bajo la barra fija */
     }  
   
     .menu-navegacion {  
-      background-color: rgba(0, 0, 0, 0.85);  
+      background-color: rgba(0, 0, 0, 0.5); /* menos intenso (más transparente) */
       padding: 15px 0;  
       text-align: center;  
       position: fixed;  
       width: 100%;  
       top: 0;  
       z-index: 999;  
-    }  
-  
-    .menu-navegacion ul {  
-      list-style: none;  
-      margin: 0;  
-      padding: 0;  
       display: flex;  
       justify-content: center;  
       gap: 40px;  
     }  
   
     .menu-navegacion a {  
-      color: #ffcc00;  
+      color: #ffcc00; /* amarillo */ 
       text-decoration: none;  
       font-weight: bold;  
       font-size: 16px;  
@@ -46,25 +42,25 @@
       color: #ffffff;  
     }  
   
-   .banner {  
-  position: absolute;  
-  top: 10px;  
-  right: 10px;  
-  width: 160px;  
-  height: 160px;  
-  border-radius: 50%;  
-  object-fit: cover;  
-  border: 4px solid #ffcc00;  
-  box-shadow: 0 0 15px #ffcc00aa;  
-  z-index: 1000; /* Asegura que esté al frente del menú */
-}
+    .banner {  
+      position: absolute;  
+      top: 10px;  
+      right: 10px;  
+      width: 160px;  
+      height: 160px;  
+      border-radius: 50%;  
+      object-fit: cover;  
+      border: 4px solid #ffcc00;  
+      box-shadow: 0 0 15px #ffcc00aa;  
+      z-index: 1000; /* Asegura que esté al frente del menú */
+    }  
   
     .contenido {  
       background-color: rgba(0, 0, 0, 0.7);  
       padding: 30px;  
       border-radius: 10px;  
       max-width: 800px;  
-      margin: 100px auto 40px;  
+      margin: 40px auto;  
       box-shadow: 0 0 20px rgba(0,0,0,0.8);  
     }  
   
@@ -122,14 +118,13 @@
 <body>  
   
   <!-- Menú de navegación -->  
-  <nav class="navbar">
+  <nav class="menu-navegacion">
     <a href="explicacion.html">Inicio</a>
     <a href="incendios.html">Incendios</a>
     <a href="terremoto.html">Terremotos</a>
     <a href="incendios forestales.html">Incendios Forestales</a>
     <a href="herramientas.html">Herramientas</a>
   </nav>
-
 
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVC89P2-G3NZEumAO8QOzWTdrM_XHon15Qw&s" alt="Banner" class="banner" />  
   
