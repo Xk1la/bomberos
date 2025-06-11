@@ -112,7 +112,47 @@
   
     .contacto p {  
       margin: 5px 0;  
-    }  
+    }
+
+    /* Estilos para la caja de comentarios */
+    .comentarios {
+      margin-top: 40px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .comentarios h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .comentarios textarea {
+      width: 100%;
+      height: 100px;
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      resize: vertical;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .comentarios button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: black;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .comentarios button:hover {
+      background-color: #e6b800;
+    }
   </style>  
 </head>  
 <body>  
@@ -213,8 +253,15 @@
       <p><strong>Ambulancia:</strong> 131</p>  
       <p><strong>Emergencias generales:</strong> 911</p>  
     </div>  
-  
-     
+
+    <!-- Caja de comentarios -->
+    <div class="comentarios">
+      <h3>📝 Deja tu comentario</h3>
+      <textarea placeholder="Escribe tu comentario aquí..."></textarea>
+      <br>
+      <button>Enviar</button>
+    </div>
+
   </div>  
 </body>  
 </html>
