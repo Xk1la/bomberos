@@ -64,14 +64,35 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.8);  
     }  
   
-    h1, h2, h3 {  
+    h1 {  
       color: #ffcc00;  
       text-align: center;  
+    }  
+  
+    h2 {  
+      color: #ff6347;  
+      margin-top: 30px;  
     }  
   
     ul {  
       list-style: square;  
       padding-left: 20px;  
+    }  
+  
+    a.boton {  
+      display: inline-block;  
+      margin-top: 20px;  
+      padding: 10px 20px;  
+      background-color: #d60000;  
+      color: white;  
+      text-decoration: none;  
+      border-radius: 8px;  
+      font-weight: bold;  
+      transition: background-color 0.3s ease;  
+    }  
+  
+    a.boton:hover {  
+      background-color: #a40000;  
     }  
   
     .seccion {  
@@ -84,51 +105,19 @@
       border-radius: 8px;  
       margin-top: 30px;  
     }  
-
-    /* Estilo para la caja de comentarios */
-    .comentarios {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 30px;
-    }
-
-    .comentarios h3 {
-      color: #ffcc00;
-      margin-bottom: 10px;
-    }
-
-    .comentarios textarea {
-      width: 100%;
-      height: 100px;
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      resize: vertical;
-      font-size: 14px;
-    }
-
-    .comentarios button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      border: none;
-      border-radius: 8px;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .comentarios button:hover {
-      background-color: #ffaa00;
-    }
-
+  
+    .contacto h3 {  
+      color: #ffcc00;  
+    }  
+  
+    .contacto p {  
+      margin: 5px 0;  
+    }  
   </style>  
 </head>  
 <body>  
-
- 
+  
+  <!-- Menú de navegación -->  
   <nav class="menu-navegacion">
     <a href="explicacion.html">Inicio</a>
     <a href="incendios.html">Incendios</a>
@@ -140,8 +129,82 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVC89P2-G3NZEumAO8QOzWTdrM_XHon15Qw&s" alt="Banner" class="banner" />  
   
   <div class="contenido">  
+    <h1>¿Para qué sirve esta página?</h1>  
+    <p>Esta página web fue creada como una <strong>guía educativa y de prevención</strong> para enseñar a las personas qué hacer en diferentes situaciones de emergencia. Su propósito principal es <strong>informar, preparar y concientizar</strong> a los usuarios sobre cómo actuar correctamente ante eventos peligrosos.</p>  
   
+    <h2>🎯 Objetivos:</h2>  
+    <ul>  
+      <li>Enseñar medidas de seguridad antes, durante y después de una emergencia.</li>  
+      <li>Compartir relatos reales de sobrevivientes.</li>  
+      <li>Mostrar el rol de los bomberos y equipos de emergencia.</li>  
+      <li>Fomentar la prevención y preparación comunitaria.</li>  
+    </ul>  
+  
+    <h2>👥 ¿A quién está dirigida?</h2>  
+    <p>A cualquier persona que quiera aprender a enfrentar emergencias: estudiantes, familias, adultos mayores, comunidades rurales y urbanas.</p>  
+  
+    <div class="seccion">  
+      <h2>Tipos comunes de emergencias</h2>  
+      <ul>  
+        <li>Incendios</li>  
+        <li>Terremotos</li>  
+        <li>Inundaciones</li>  
+        <li>Accidentes de tránsito</li>  
+        <li>Emergencias médicas</li>  
+        <li>Desastres naturales (huracanes, tsunamis, etc.)</li>  
+      </ul>  
+    </div>  
+  
+    <div class="seccion">  
+      <h2>Consejos básicos para actuar en una emergencia</h2>  
+      <ul>  
+        <li>Mantén la calma y evalúa la situación.</li>  
+        <li>Llama a los servicios de emergencia locales (bomberos, policía, ambulancia).</li>  
+        <li>Si es seguro, ayuda a las personas en peligro.</li>  
+        <li>Sigue las instrucciones de los profesionales de emergencia.</li>  
+        <li>Ten siempre a mano un kit de emergencia con agua, alimentos, linterna y botiquín.</li>  
+        <li>Practica simulacros regularmente en tu hogar o comunidad.</li>  
+      </ul>  
+    </div>  
 
+    <div class="seccion">
+      <h2>🧰 ¿Qué debe tener un kit de emergencia?</h2>
+      <ul>
+        <li>Agua potable (al menos 2 litros por persona por día)</li>
+        <li>Alimentos no perecibles (abarrotes, barras energéticas, etc.)</li>
+        <li>Linterna con pilas de repuesto</li>
+        <li>Botiquín de primeros auxilios</li>
+        <li>Radio portátil (de preferencia con batería o energía solar)</li>
+        <li>Cargador de celular o batería externa</li>
+        <li>Documentos importantes en una bolsa impermeable</li>
+        <li>Ropa extra, mantas térmicas o abrigo</li>
+        <li>Silbato o pito para pedir ayuda</li>
+        <li>Productos de higiene personal</li>
+      </ul>
+    </div>
+
+    <div class="seccion">
+      <h2>⚠️ Errores comunes en emergencias que debes evitar</h2>
+      <ul>
+        <li>Entrar en pánico o correr sin rumbo</li>
+        <li>Ignorar las alertas o recomendaciones oficiales</li>
+        <li>No tener un punto de encuentro definido con tu familia</li>
+        <li>Subestimar la situación y no evacuar a tiempo</li>
+        <li>Usar el ascensor durante un sismo</li>
+        <li>No revisar periódicamente tu kit de emergencia</li>
+      </ul>
+    </div>
+
+    <div class="seccion">
+      <h2>👨‍👩‍👧‍👦 Preparación familiar ante emergencias</h2>
+      <ul>
+        <li>Designa roles: quién cuida a los niños, quién se encarga del kit, etc.</li>
+        <li>Establece un punto de encuentro dentro y fuera del hogar</li>
+        <li>Practiquen simulacros en casa al menos dos veces al año</li>
+        <li>Enséñale a todos los miembros cómo cortar el gas, luz y agua</li>
+        <li>Guarda una lista con teléfonos de emergencia a la vista</li>
+      </ul>
+    </div>
   
     <div class="contacto seccion">  
       <h3>📞 Contactos de emergencia</h3>  
@@ -149,17 +212,10 @@
       <p><strong>Carabineros:</strong> 133</p>  
       <p><strong>Ambulancia:</strong> 131</p>  
       <p><strong>Emergencias generales:</strong> 911</p>  
-    </div>
-
-   
-    <div class="comentarios">
-      <h3>💬 Deja tu comentario</h3>
-      <form>
-        <textarea placeholder="Escribe aquí tu comentario..."></textarea><br>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-
+    </div>  
+  
+     
   </div>  
 </body>  
 </html>
+
